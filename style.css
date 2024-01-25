@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100%);
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+
+.navbar button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.navbar form {
+    display: flex;
+    align-items: center;
+}
+
+.navbar label {
+    margin-right: 10px;
+    color: white;
+}
+
+.navbar input {
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.navbar button[type="submit"] {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.weather-container,
+.not-found-container {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 60px);
+    box-sizing: border-box;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #aee1f4;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.not-found-container h2 {
+    color: red;
+}
+
+#forecastDays {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day-card {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.day-card:active {
+    background-color: #ffffff;
+}
+
+.day-card img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}

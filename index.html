@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div>
+        <button onclick="showToday()" style="margin-left: 30px;">Today</button>
+        <button onclick="show5DayForecast()">5-Day Forecast</button>
+    </div>
+    <form onsubmit="event.preventDefault(); handleSubmit()">
+        <label for="cityInput">Enter city name:</label>
+        <input type="text" id="cityInput" placeholder="City" required>
+        <button type="submit" style="margin-right: 30px;">Get Weather</button>
+    </form>
+</div>
+
+<div class="weather-container" id="currentWeather"></div>
+
+<div class="weather-container" id="hourlyWeather"></div>
+
+<div class="weather-container" id="5DayForecast"></div>
+
+<div class="not-found-container" id="notFound"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
